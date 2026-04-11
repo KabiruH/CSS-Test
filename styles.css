@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'robotoItalic';
+    src: url(fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+/* Header */
+header {
+  background-color: #1F2937;
+}
+
+.header-container {
+  display: flex;                   /* puts logo and nav on one line */
+  justify-content: space-between;  /* logo left, nav right */
+  align-items: center;             /* vertically centers both */
+  padding: 1rem 2rem;              /* top/bottom and side breathing room */
+  max-width: 1100px;               /* stops stretching on wide screens */
+  margin: 0 auto;                  /* centers the container */
+}
+
+.logo {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F9FAF8;
+  text-decoration: none;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;       
+    display: flex;          
+    justify-content: flex-end;  
+    gap: 2rem;              
+    margin: 2;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    color: #E5E7EB;
+    font-size: 1.125rem;
+}
+
+nav ul a:hover {
+    color: #F9FAF8;
+}
+
+/* Main */
+.hero {
+  background-color: #1F2937;
+  padding: 4rem 2rem;
+}
+
+.hero-container {
+  display: flex;                  /* text left, image right */
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;                       /* takes up half the space */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #F9FAF8;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  color: #E5E7EB;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'roboto', sans-serif;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+.hero-image {
+  flex: 1;                       /* takes up other half */
+  background-color: #4B5563;
+  border-radius: 8px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E5E7EB;
+}
