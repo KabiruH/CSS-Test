@@ -9,66 +9,250 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="header-container">
-                 <a href="/index.html" class="logo">Home of Recipes</a>
-        <nav>
-            <ul>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/recipes.html">Recipes</a></li>
-                <li><a href="/pages/contactUs.html">Contact Us</a></li>
-            </ul>
-        </nav>
-         </div>
+            <a href="/index.html" class="logo">Home of Recipes</a>
+            <nav>
+                <ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/recipes.html">Recipes</a></li>
+                    <li><a href="/pages/contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section>
         <main>
-            <h3>Recipe 1</h3>
-            <img src="./recipe-images/Creamy-Chicken-Alfredo-Dish.jpg" alt="This a picture of a Chicken Alfredo dish">
-            <p>
-                Chicken Alfredo: A creamy pasta dish made with tender chicken,
-                fettuccine noodles, and a rich Alfredo sauce.
-            </p>
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-text">
+                        <h1>Our Recipes</h1>
+                        <p>From quick weekday dinners to weekend feasts —
+                            find your next favourite meal right here.</p>
+                    </div>
+                </div>
+            </section>
 
-            <br />
+            <!-- Recipe list -->
 
-            <h3>Recipe 2</h3>
-            <img src="./recipe-images/Beef-Tacos-Dish.jpg" alt="This is a picture of a Beef Tacos dish">
-            <p>
-                Beef Tacos: A flavorful Mexican dish made with seasoned ground
-                beef, served in warm tortillas and topped with fresh salsa,
-                cheese, and sour cream.
-            </p>
+            <section class="info-section">
+                <div class="info-container">
 
-            <br>
+                    <h2>Browse All Recipes</h2>
 
-            <h3>Recipe 3</h3>
-            <img src="./recipe-images/Butter-Chicken-Dish.jpg" alt="This is a picture of a Butter Chicken dish">
-            <p>
-                Recipe 3 - Butter Chicken: A popular Indian dish made with
-                tender chicken cooked in a rich and creamy tomato-based sauce.
-            </p>
+                    <!-- RECIPE 1 -->
+                    <article class="recipe-card">
+                        <img src="./recipe-images/Creamy-Chicken-Alfredo-Dish.jpg" alt="Chicken Alfredo">
+                        <div class="recipe-details">
+                            <h3>Chicken Alfredo</h3>
+                            <p class="recipe-description">A creamy pasta dish made with
+                                tender chicken, fettuccine noodles, and a rich Alfredo sauce.
+                                Perfect for a comforting weeknight dinner.</p>
+                            <div class="recipe-meta">
+                                <span>⏱ 30 mins</span>
+                                <span>👤 Serves 4</span>
+                                <span>🍽 Easy</span>
+                            </div>
+                            <h4>Ingredients</h4>
+                            <ul class="recipe-ingredients">
+                                <li>300g fettuccine pasta</li>
+                                <li>2 chicken breasts, sliced</li>
+                                <li>200ml heavy cream</li>
+                                <li>50g parmesan cheese, grated</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>2 tbsp butter</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                            <h4>Instructions</h4>
+                            <ol class="recipe-steps">
+                                <li>Cook fettuccine according to package instructions.
+                                    Drain and set aside.</li>
+                                <li>Season chicken with salt and pepper. Cook in a pan
+                                    over medium heat until golden. Set aside.</li>
+                                <li>In the same pan, melt butter and sauté garlic for
+                                    1 minute.</li>
+                                <li>Pour in heavy cream and bring to a gentle simmer.
+                                    Stir in parmesan until smooth.</li>
+                                <li>Add pasta and chicken back into the pan. Toss to
+                                    coat and serve immediately.</li>
+                            </ol>
+                        </div>
+                    </article>
 
-            <br />
+                    <!-- RECIPE 2 -->
+                    <article class="recipe-card">
+                        <img src="./recipe-images/Beef-Tacos-Dish.jpg" alt="Beef Tacos">
+                        <div class="recipe-details">
+                            <h3>Beef Tacos</h3>
+                            <p class="recipe-description">A flavourful Mexican dish made
+                                with seasoned ground beef, served in warm tortillas and
+                                topped with fresh salsa, cheese, and sour cream.</p>
+                            <div class="recipe-meta">
+                                <span>⏱ 25 mins</span>
+                                <span>👤 Serves 4</span>
+                                <span>🍽 Easy</span>
+                            </div>
+                            <h4>Ingredients</h4>
+                            <ul class="recipe-ingredients">
+                                <li>500g ground beef</li>
+                                <li>8 small tortillas</li>
+                                <li>1 tsp cumin</li>
+                                <li>1 tsp chili powder</li>
+                                <li>1 onion, diced</li>
+                                <li>Salsa, cheese and sour cream to serve</li>
+                            </ul>
+                            <h4>Instructions</h4>
+                            <ol class="recipe-steps">
+                                <li>Heat oil in a pan over medium heat. Add onion and
+                                    cook until soft.</li>
+                                <li>Add ground beef and cook until browned. Drain
+                                    excess fat.</li>
+                                <li>Stir in cumin, chili powder, salt and pepper.
+                                    Cook for 2 more minutes.</li>
+                                <li>Warm tortillas in a dry pan or microwave.</li>
+                                <li>Assemble tacos with beef, salsa, cheese and
+                                    sour cream.</li>
+                            </ol>
+                        </div>
+                    </article>
 
-            <h3>Recipe 4</h3>
-            <img src="./recipe-images/Beef-Chow-Mein_Dish.jpg" alt="This is a picture of a Chow Mein Stir-Fry dish">
-            <p>
-                Chow Mein Stir-Fry: A delicious Chinese dish made with stir-fried
-                noodles, vegetables, and your choice of protein (chicken, beef,
-                shrimp, or tofu) in a savory sauce.
-            </p>
+                    <!-- RECIPE 3 -->
+                    <article class="recipe-card">
+                        <img src="./recipe-images/Butter-Chicken-Dish.jpg" alt="Butter Chicken">
+                        <div class="recipe-details">
+                            <h3>Butter Chicken</h3>
+                            <p class="recipe-description">A popular Indian dish made with
+                                tender chicken cooked in a rich and creamy tomato-based
+                                sauce. Best served with rice or naan bread.</p>
+                            <div class="recipe-meta">
+                                <span>⏱ 45 mins</span>
+                                <span>👤 Serves 4</span>
+                                <span>🍽 Medium</span>
+                            </div>
+                            <h4>Ingredients</h4>
+                            <ul class="recipe-ingredients">
+                                <li>600g chicken breast, cubed</li>
+                                <li>400ml tomato puree</li>
+                                <li>150ml heavy cream</li>
+                                <li>2 tbsp butter</li>
+                                <li>1 tsp garam masala</li>
+                                <li>1 tsp turmeric</li>
+                                <li>1 tsp cumin</li>
+                                <li>3 cloves garlic, minced</li>
+                            </ul>
+                            <h4>Instructions</h4>
+                            <ol class="recipe-steps">
+                                <li>Marinate chicken in yoghurt, turmeric and cumin
+                                    for 20 minutes.</li>
+                                <li>Cook chicken in butter over medium heat until
+                                    golden. Set aside.</li>
+                                <li>In the same pan, cook garlic for 1 minute then
+                                    add tomato puree.</li>
+                                <li>Simmer for 10 minutes then stir in cream and
+                                    garam masala.</li>
+                                <li>Return chicken to the pan and simmer for a
+                                    further 10 minutes. Serve with rice.</li>
+                            </ol>
+                        </div>
+                    </article>
 
-            <br />
+                    <!-- RECIPE 4 -->
+                    <article class="recipe-card">
+                        <img src="./recipe-images/Beef-Chow-Mein_Dish.jpg" alt="Beef Chow Mein">
+                        <div class="recipe-details">
+                            <h3>Beef Chow Mein</h3>
+                            <p class="recipe-description">A delicious Chinese stir-fry
+                                made with noodles, tender beef strips and vegetables
+                                tossed in a savoury sauce.</p>
+                            <div class="recipe-meta">
+                                <span>⏱ 30 mins</span>
+                                <span>👤 Serves 4</span>
+                                <span>🍽 Easy</span>
+                            </div>
+                            <h4>Ingredients</h4>
+                            <ul class="recipe-ingredients">
+                                <li>300g chow mein noodles</li>
+                                <li>400g beef strips</li>
+                                <li>2 tbsp soy sauce</li>
+                                <li>1 tbsp oyster sauce</li>
+                                <li>1 carrot, julienned</li>
+                                <li>2 spring onions, sliced</li>
+                                <li>2 cloves garlic, minced</li>
+                            </ul>
+                            <h4>Instructions</h4>
+                            <ol class="recipe-steps">
+                                <li>Cook noodles according to package instructions.
+                                    Drain and set aside.</li>
+                                <li>Stir-fry beef in a hot wok until browned.
+                                    Set aside.</li>
+                                <li>In the same wok, stir-fry garlic, carrot and
+                                    spring onions for 2 minutes.</li>
+                                <li>Add noodles, soy sauce and oyster sauce.
+                                    Toss everything together.</li>
+                                <li>Return beef to the wok, mix well and serve hot.</li>
+                            </ol>
+                        </div>
+                    </article>
 
-            <h3>Recipe 5</h3>
-            <img src="./recipe-images/Classic-Pizza-Margherita-Dish.jpg"
-                alt="This is a picture of a Margherita Pizza dish">
-            <p>
-                Margherita Pizza: A classic Italian pizza topped with fresh tomatoes,
-                mozzarella cheese, fresh basil leaves, and a drizzle of olive oil.
-            </p>
+                    <!-- RECIPE 5 -->
+                    <article class="recipe-card">
+                        <img src="./recipe-images/Classic-Pizza-Margherita-Dish.jpg" alt="Margherita Pizza">
+                        <div class="recipe-details">
+                            <h3>Margherita Pizza</h3>
+                            <p class="recipe-description">A classic Italian pizza topped
+                                with fresh tomatoes, mozzarella cheese, basil leaves
+                                and a drizzle of olive oil.</p>
+                            <div class="recipe-meta">
+                                <span>⏱ 40 mins</span>
+                                <span>👤 Serves 2</span>
+                                <span>🍽 Medium</span>
+                            </div>
+                            <h4>Ingredients</h4>
+                            <ul class="recipe-ingredients">
+                                <li>1 pizza base or dough</li>
+                                <li>150ml tomato sauce</li>
+                                <li>200g fresh mozzarella, sliced</li>
+                                <li>Fresh basil leaves</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>Salt and pepper to taste</li>
+                            </ul>
+                            <h4>Instructions</h4>
+                            <ol class="recipe-steps">
+                                <li>Preheat oven to 220°C.</li>
+                                <li>Spread tomato sauce evenly over the pizza base.</li>
+                                <li>Arrange mozzarella slices on top.</li>
+                                <li>Bake for 12-15 minutes until crust is golden
+                                    and cheese is bubbling.</li>
+                                <li>Top with fresh basil and a drizzle of olive oil
+                                    before serving.</li>
+                            </ol>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <section class="cta-section">
+                <div class="cta-container">
+                    <div class="cta-text">
+                        <h3>Hungry for more?</h3>
+                        <p>Get in touch and let us know what recipes you would like to see next!</p>
+                    </div>
+                    <a href="/pages/contactUs.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <p>Copyright &copy; 2026 Home of Recipes</p>
+            </div>
+        </footer>
+
         </main>
     </section>
 </body>
