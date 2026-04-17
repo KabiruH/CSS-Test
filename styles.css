@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'roboto';
     src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf) format('truetype');
@@ -6,6 +12,10 @@
 @font-face {
     font-family: 'robotoItalic';
     src: url(fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf) format('truetype');
+}
+
+body {
+    font-family: 'roboto', sans-serif;   
 }
 
 /* Header */
@@ -176,7 +186,7 @@ nav ul a:hover {
 .quote-section {
   background-color: #E5E7EB;
   padding: 4rem 2rem;
-  max-width: 950px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -249,7 +259,7 @@ blockquote cite {
 footer {
   background-color: #1F2937;
   padding: 1.5rem 2rem;
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 1%;
 }
@@ -281,6 +291,10 @@ footer p {
 }
 
 /* RECIPE CARD */
+.recipe-card.reverse {
+    flex-direction: row-reverse;
+}
+
 .recipe-card {
     display: flex;
     gap: 2rem;
@@ -292,8 +306,8 @@ footer p {
 }
 
 .recipe-card img {
-    width: 280px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;        
@@ -351,8 +365,16 @@ footer p {
 
 /* CONTACT FORM */
 .contact-form {
+    background-color: #F0F7FF;        
+    border: 2px solid #3882F6;        
+    border-radius: 12px;              
+    padding: 2.5rem;                  
     max-width: 600px;
     margin: 0 auto;
+}
+
+.contact-form h2 {
+    color: #3882F6;
 }
 
 .form-group {
@@ -362,11 +384,8 @@ footer p {
 }
 
 .form-group label {
-    font-family: 'roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
     color: #1F2937;
-    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .form-group input,
@@ -385,3 +404,108 @@ footer p {
     border-color: #3882F6;      
 }
 
+.contact-form .btn {
+    width: 100%;                      
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+/* MOBILE - 480px */
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+     .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    /* INFO CARDS */
+    .info-card {
+        max-width: 100%;          
+        width: 100%;
+    }
+
+    /* INFO SECTION */
+    .info-section {
+        padding: 2rem 1rem;
+    }
+
+
+    .info-cards {
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    .info-card img {
+        max-width: 250px;         
+    }
+
+    /* RECIPE CARDS */
+    .recipe-card,
+    .recipe-card.reverse {
+        flex-direction: column;
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: 250px;
+    }
+    .recipe-meta {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    /* CONTACT FORM */
+    .contact-form {
+        padding: 1.5rem 1rem;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 1rem;
+    }
+
+    .cta-container {
+        padding: 1.5rem;
+    }
+
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 1rem;
+    }
+}
